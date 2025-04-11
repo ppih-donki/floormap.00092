@@ -2,33 +2,20 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>GINZAHONKAN_FROORMAP</title>
+  <title>画像の縦並び表示</title>
   <style>
-    /* 全体の余白リセットと背景カラー */
-    html, body {
-      margin: 0;
-      padding: 0;
-      background-color: #f7f7f7;
-    }
-    /* コンテナを中央に配置 */
-    .container {
-      max-width: 1080px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    /* 各画像のスタイル */
-    .container img {
-      width: 100%;
-      height: auto;
+    /* 画像をブロック要素にし、間隔を設定 */
+    img {
       display: block;
+      margin-bottom: 20px; /* 必要に応じて調整 */
+      max-width: 100%; /* レスポンシブ対応 */
+      height: auto;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="images/00092_floormap_01.jpg" alt="フロアマップ1">
-  </div>
+  <!-- ディレクトリ構成に合わせたパスで画像を指定 -->
+  <img src="./images/00092_1F_map.jpg" alt="1F Map">
+  <img src="./images/00092_2F_map.jpg" alt="2F Map">
 </body>
 </html>
